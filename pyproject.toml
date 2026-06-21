@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plumb"
+version = "0.1.0"
+description = "Predictive failure detection on long-horizon LLM agent trajectories"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2",
+    "pandas>=2",
+    "pyarrow>=15",
+    "duckdb>=1",
+    "openai>=1",
+    "tiktoken>=0.7",
+    "opentelemetry-api>=1.25",
+    "opentelemetry-sdk>=1.25",
+]
+
+[project.optional-dependencies]
+ml = ["lightgbm>=4", "scikit-learn>=1.4"]
+embed = ["sentence-transformers>=3"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["plumb*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
