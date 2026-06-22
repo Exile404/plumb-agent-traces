@@ -12,7 +12,7 @@ PhD prototype. Supervisor: Prof Rajesh Vasa, Deakin A2I2. The full thesis, hypot
 |---|---|---|
 | A | Quantized vLLM serving Qwen2.5-Coder-7B with logprobs (Blackwell sm_120) | Done |
 | B | Capture harness: OTel spans to parquet to 14 features, pytest (Week-1 DoD) | Done |
-| C | Wire real Mini-SWE-agent into capture, batch on SWE-bench-Live | Next |
+| C | Mini-SWE-agent wired into capture (done); batch on SWE-bench-Live (next) | In progress |
 | D | Auto labels, train LightGBM, answer H1 (AUROC, lead-time, ablation) | Planned |
 | E1 | MAST failure-mode head (H2) | Planned |
 | E2 | OpenHands cross-agent transfer (H3) | Planned |
@@ -26,11 +26,13 @@ PhD prototype. Supervisor: Prof Rajesh Vasa, Deakin A2I2. The full thesis, hypot
   - `plumb/parse.py` reconstructs per-step trajectories to `data/trajectories/<id>.parquet`.
   - `plumb/features/` computes all 14 per-step features to `data/features/<id>.parquet`.
   - `tests/` cover capture round-trip and feature values, hermetic, green.
+- Real Mini-SWE-agent (text-based model on local vLLM) runs through the same capture path via `plumb/agents/mini_wrapper.py` and `scripts/05_run_mini_agent.py`: a toy task returns `Submitted`, with genuine per-token logprobs and per-step bash commands reaching features.
 
 ### Remaining and known gaps
-- Mini-SWE-agent (installed, v2.4.2) is not yet wired. Block B ran on a toy emitter.
-- Placeholders: `recursion_depth` (stub), `embedding_drift` (cheap hash embedding, swaps to bge-small), failure label (exit-code proxy until MAST labels).
-- No SWE-bench-Live tasks pulled, no classifier yet.
+- Batch rollouts on SWE-bench-Live not started; real tasks need the Docker environment (the toy run uses LocalEnvironment).
+- Labels use an exit-code proxy; real labels come from agent `exit_status` plus SWE-bench test verification. `files_touched` is not tracked yet, so unique-file features read 0.
+- Placeholders: `recursion_depth` (stub), `embedding_drift` (cheap hash embedding, swaps to bge-small).
+- No classifier yet.
 
 ## Stack
 
@@ -57,8 +59,9 @@ bash scripts/01_start_vllm.sh
 Capture a toy trajectory and run the pipeline (second terminal):
 ```bash
 source plumb-venv/bin/activate
-python scripts/02_smoke_trace.py       # trace to data/raw_traces/<run>.jsonl
-python scripts/03_parse_trajectory.py  # to data/trajectories/<id>.parquet
+python scripts/02_smoke_trace.py       # toy trace to data/raw_traces/<run>.jsonl
+python scripts/05_run_mini_agent.py    # or a real Mini-SWE-agent run (needs the server)
+python scripts/03_parse_trajectory.py  # parses the newest trace to data/trajectories/<id>.parquet
 python scripts/04_extract_features.py  # to data/features/<id>.parquet
 pytest -q                              # 3 passed
 ```
