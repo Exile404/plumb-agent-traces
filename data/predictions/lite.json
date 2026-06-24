@@ -1,0 +1,437 @@
+{
+  "aiogram__aiogram-1594": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aiogram__aiogram-1594",
+    "model_patch": "diff --git a/aiogram/fsm/context.py b/aiogram/fsm/context.py\nindex 53a8ea46..80ad1c61 100644\n--- a/aiogram/fsm/context.py\n+++ b/aiogram/fsm/context.py\n@@ -30,3 +30,5 @@ class FSMContext:\n     async def clear(self) -> None:\n         await self.set_state(state=None)\n         await self.set_data({})\n+    async def get_value(self, key):\n+        return self._data.get(key)\n"
+  },
+  "aws-cloudformation__cfn-lint-3749": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aws-cloudformation__cfn-lint-3749",
+    "model_patch": ""
+  },
+  "aws-cloudformation__cfn-lint-3764": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aws-cloudformation__cfn-lint-3764",
+    "model_patch": "diff --git a/custom_rules.txt b/custom_rules.txt\nindex a0983d6d7..9adaf0d20 100644\n--- a/custom_rules.txt\n+++ b/custom_rules.txt\n@@ -1,3 +1,4 @@\n #Comments can be made with a '#' symbol at the start of the line\n #Syntax: <Resource Type> <Property[*]> <Operator> <Value>\n #Example: AWS::EC2::Instance InstanceType EQUALS \"p3.2xlarge\"\n+AWS::CloudFormation::Stack Resources[*].Properties.Fn::ForEach[*] EMPTY\n"
+  },
+  "aws-cloudformation__cfn-lint-3767": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aws-cloudformation__cfn-lint-3767",
+    "model_patch": ""
+  },
+  "aws-cloudformation__cfn-lint-3768": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aws-cloudformation__cfn-lint-3768",
+    "model_patch": ""
+  },
+  "aws-cloudformation__cfn-lint-3770": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aws-cloudformation__cfn-lint-3770",
+    "model_patch": "diff --git a/test/unit/rules/resources/stepfunctions/test_state_machine_definition.py b/test/unit/rules/resources/stepfunctions/test_state_machine_definition.py\nindex 2814b5b6e..c2fccb866 100644\n--- a/test/unit/rules/resources/stepfunctions/test_state_machine_definition.py\n+++ b/test/unit/rules/resources/stepfunctions/test_state_machine_definition.py\n@@ -530,7 +530,7 @@ def rule():\n                     \"States\": {\n                         \"Submit Batch Job\": {\n                             \"Type\": \"Task\",\n-                            \"Resource\": \"${jobqueue}\",\n+                            \"Resource\": \"arn:aws:sns:us-east-1:123456789012:batchjobnotificatiointemplate-SNSTopic-1J757CVBQ2KHM\",\n                             \"Parameters\": {\n                                 \"JobName\": \"BatchJobNotification\",\n                                 \"JobQueue\": \"arn:aws:batch:us-east-1:123456789012:job-queue/BatchJobQueue-7049d367474b4dd\",\n@@ -626,7 +626,7 @@ def rule():\n                     \"States\": {\n                         \"Submit Batch Job\": {\n                             \"Type\": \"Task\",\n-                            \"Resource\": \"${jobqueue}\",\n+                            \"Resource\": \"arn:aws:sns:us-east-1:123456789012:batchjobnotificatiointemplate-SNSTopic-1J757CVBQ2KHM\",\n                             \"Parameters\": {\n                                 \"JobName\": \"BatchJobNotification\",\n                                 \"JobQueue\": \"arn:aws:batch:us-east-1:123456789012:job-queue/BatchJobQueue-7049d367474b4dd\",\n"
+  },
+  "aws-cloudformation__cfn-lint-3779": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aws-cloudformation__cfn-lint-3779",
+    "model_patch": ""
+  },
+  "aws-cloudformation__cfn-lint-3789": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "aws-cloudformation__cfn-lint-3789",
+    "model_patch": ""
+  },
+  "delgan__loguru-1306": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "delgan__loguru-1306",
+    "model_patch": ""
+  },
+  "kozea__weasyprint-2300": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "kozea__weasyprint-2300",
+    "model_patch": ""
+  },
+  "conan-io__conan-17292": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "conan-io__conan-17292",
+    "model_patch": ""
+  },
+  "cyclotruc__gitingest-115": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "cyclotruc__gitingest-115",
+    "model_patch": ""
+  },
+  "deepset-ai__haystack-9066": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "deepset-ai__haystack-9066",
+    "model_patch": ""
+  },
+  "dynaconf__dynaconf-1241": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "dynaconf__dynaconf-1241",
+    "model_patch": ""
+  },
+  "fonttools__fonttools-3682": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "fonttools__fonttools-3682",
+    "model_patch": ""
+  },
+  "huggingface__smolagents-731": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "huggingface__smolagents-731",
+    "model_patch": ""
+  },
+  "icloud-photos-downloader__icloud_photos_downloader-1060": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "icloud-photos-downloader__icloud_photos_downloader-1060",
+    "model_patch": ""
+  },
+  "instructlab__instructlab-2526": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "instructlab__instructlab-2526",
+    "model_patch": ""
+  },
+  "ipython__ipython-14695": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "ipython__ipython-14695",
+    "model_patch": ""
+  },
+  "iterative__dvc-10711": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "iterative__dvc-10711",
+    "model_patch": ""
+  },
+  "jazzband__tablib-613": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "jazzband__tablib-613",
+    "model_patch": ""
+  },
+  "amoffat__sh-744": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "amoffat__sh-744",
+    "model_patch": ""
+  },
+  "delgan__loguru-1297": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "delgan__loguru-1297",
+    "model_patch": "diff --git a/loguru/_ctime_functions.py b/loguru/_ctime_functions.py\nindex a5e345a..817feef 100644\n--- a/loguru/_ctime_functions.py\n+++ b/loguru/_ctime_functions.py\n@@ -39,7 +39,7 @@ def load_ctime_functions():\n \n         def set_ctime_linux(filepath, timestamp):\n             try:\n-                os.setxattr(filepath, b\"user.loguru_crtime\", str(timestamp).encode(\"ascii\"))\n+                from datetime import datetime; os.setxattr(filepath, b\"user.loguru_crtime\", datetime.fromtimestamp(timestamp).isoformat().encode(\"ascii\"))\n             except OSError:\n                 pass\n \n"
+  },
+  "flexget__flexget-4244": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "flexget__flexget-4244",
+    "model_patch": ""
+  },
+  "pypsa__pypsa-1172": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pypsa__pypsa-1172",
+    "model_patch": ""
+  },
+  "arviz-devs__arviz-2413": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "arviz-devs__arviz-2413",
+    "model_patch": ""
+  },
+  "beancount__beancount-931": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "beancount__beancount-931",
+    "model_patch": ""
+  },
+  "beetbox__beets-5495": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "beetbox__beets-5495",
+    "model_patch": ""
+  },
+  "beeware__briefcase-2075": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "beeware__briefcase-2075",
+    "model_patch": ""
+  },
+  "bridgecrewio__checkov-6895": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "bridgecrewio__checkov-6895",
+    "model_patch": "diff --git a/checkov/terraform/checks/resource/azure/PostgreSQLFlexiServerGeoBackupEnabled.py b/checkov/terraform/checks/resource/azure/PostgreSQLFlexiServerGeoBackupEnabled.py\nindex c8ffbceb7..c2a27dd88 100644\n--- a/checkov/terraform/checks/resource/azure/PostgreSQLFlexiServerGeoBackupEnabled.py\n+++ b/checkov/terraform/checks/resource/azure/PostgreSQLFlexiServerGeoBackupEnabled.py\n@@ -10,8 +10,8 @@ class PostgreSQLFlexiServerGeoBackupEnabled(BaseResourceValueCheck):\n         categories = [CheckCategories.BACKUP_AND_RECOVERY]\n         super().__init__(name=name, id=id, categories=categories, supported_resources=supported_resources)\n \n-    def get_inspected_key(self):\n-        return 'geo_redundant_backup_enabled'\n-\n+    def get_inspected_key(self):\\n        if self.get_attribute_value(\"create_mode\") == \"Replica\":\\n            return None\n+        return 'geo_redundant_backup_enabled'\\n        if self.get_attribute_value(\"create_mode\") == \"Replica\":\\n            return None\n+\\n        if self.get_attribute_value(\"create_mode\") == \"Replica\":\\n            return None\n \n check = PostgreSQLFlexiServerGeoBackupEnabled()\n"
+  },
+  "conan-io__conan-17123": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "conan-io__conan-17123",
+    "model_patch": ""
+  },
+  "deepset-ai__haystack-8525": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "deepset-ai__haystack-8525",
+    "model_patch": "diff --git a/haystack/components/preprocessors/document_splitter.py b/haystack/components/preprocessors/document_splitter.py\nindex 2abdb41d..d3a67503 100644\n--- a/haystack/components/preprocessors/document_splitter.py\n+++ b/haystack/components/preprocessors/document_splitter.py\n@@ -16,6 +16,8 @@ logger = logging.getLogger(__name__)\n \n @component\n class DocumentSplitter:\n+def split_csv(self, content):\\n    # Add CSV splitting logic here\n+        return [row for row in csv.reader(content.splitlines())]\n     \"\"\"\n     Splits long documents into smaller chunks.\n \n"
+  },
+  "dynaconf__dynaconf-1238": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "dynaconf__dynaconf-1238",
+    "model_patch": ""
+  },
+  "geopandas__geopandas-3471": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "geopandas__geopandas-3471",
+    "model_patch": ""
+  },
+  "hiyouga__llama-factory-7505": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "hiyouga__llama-factory-7505",
+    "model_patch": ""
+  },
+  "huggingface__smolagents-405": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "huggingface__smolagents-405",
+    "model_patch": ""
+  },
+  "joke2k__faker-2142": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "joke2k__faker-2142",
+    "model_patch": ""
+  },
+  "jupyterlab__jupyter-ai-1294": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "jupyterlab__jupyter-ai-1294",
+    "model_patch": ""
+  },
+  "keras-team__keras-20389": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "keras-team__keras-20389",
+    "model_patch": ""
+  },
+  "koxudaxi__datamodel-code-generator-2259": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "koxudaxi__datamodel-code-generator-2259",
+    "model_patch": ""
+  },
+  "kubernetes-client__python-2303": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "kubernetes-client__python-2303",
+    "model_patch": ""
+  },
+  "matplotlib__matplotlib-29249": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "matplotlib__matplotlib-29249",
+    "model_patch": ""
+  },
+  "modelcontextprotocol__python-sdk-222": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "modelcontextprotocol__python-sdk-222",
+    "model_patch": ""
+  },
+  "pdm-project__pdm-3255": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pdm-project__pdm-3255",
+    "model_patch": ""
+  },
+  "privacyidea__privacyidea-4226": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "privacyidea__privacyidea-4226",
+    "model_patch": ""
+  },
+  "projectmesa__mesa-2394": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "projectmesa__mesa-2394",
+    "model_patch": ""
+  },
+  "pvlib__pvlib-python-2249": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pvlib__pvlib-python-2249",
+    "model_patch": ""
+  },
+  "pybamm-team__pybamm-4865": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pybamm-team__pybamm-4865",
+    "model_patch": ""
+  },
+  "pydata__xarray-9586": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pydata__xarray-9586",
+    "model_patch": ""
+  },
+  "pylint-dev__pylint-10097": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pylint-dev__pylint-10097",
+    "model_patch": ""
+  },
+  "pypa__twine-1225": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pypa__twine-1225",
+    "model_patch": ""
+  },
+  "bridgecrewio__checkov-6893": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "bridgecrewio__checkov-6893",
+    "model_patch": ""
+  },
+  "conan-io__conan-17092": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "conan-io__conan-17092",
+    "model_patch": ""
+  },
+  "facebookresearch__hydra-3005": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "facebookresearch__hydra-3005",
+    "model_patch": ""
+  },
+  "feast-dev__feast-5036": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "feast-dev__feast-5036",
+    "model_patch": "diff --git a/setup.py b/setup.py\nindex f20c94d55..c20900f0f 100644\n--- a/setup.py\n+++ b/setup.py\n@@ -321,4 +321,14 @@ setup(\n         \"pybindgen==0.22.0\",  # TODO do we need this?\n         \"setuptools_scm>=6.2\",  # TODO do we need this?\n     ],\n+    entry_points={\n+        \"console_scripts\": [\n+\n+            \"feast=feast.cli:main\",\n+\n+            \"feast.configuration=feast.cli:configuration\"\n+\n+        ],\n+\n+    },\n )\n"
+  },
+  "jupyterlab__jupyter-ai-1125": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "jupyterlab__jupyter-ai-1125",
+    "model_patch": ""
+  },
+  "python-babel__babel-1141": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "python-babel__babel-1141",
+    "model_patch": "diff --git a/babel/dates.py b/babel/dates.py\nindex 30321b7..df1bcc8 100644\n--- a/babel/dates.py\n+++ b/babel/dates.py\n@@ -1252,7 +1252,7 @@ def parse_date(\n     return datetime.date(year, month, day)\n \n \n-def parse_time(\n+def parse_time(, \"%S\"\n     string: str,\n     locale: Locale | str | None = LC_TIME,\n     format: _PredefinedTimeFormat = 'medium',\n"
+  },
+  "python-control__python-control-1064": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "python-control__python-control-1064",
+    "model_patch": ""
+  },
+  "qtile__qtile-5154": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "qtile__qtile-5154",
+    "model_patch": ""
+  },
+  "reata__sqllineage-661": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "reata__sqllineage-661",
+    "model_patch": ""
+  },
+  "reflex-dev__reflex-4087": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "reflex-dev__reflex-4087",
+    "model_patch": ""
+  },
+  "run-llama__llama_deploy-356": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "run-llama__llama_deploy-356",
+    "model_patch": ""
+  },
+  "shapely__shapely-2224": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "shapely__shapely-2224",
+    "model_patch": ""
+  },
+  "sissbruecker__linkding-984": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "sissbruecker__linkding-984",
+    "model_patch": ""
+  },
+  "sphinx-doc__sphinx-13261": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "sphinx-doc__sphinx-13261",
+    "model_patch": ""
+  },
+  "stanfordnlp__dspy-1651": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "stanfordnlp__dspy-1651",
+    "model_patch": ""
+  },
+  "streamlink__streamlink-6242": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "streamlink__streamlink-6242",
+    "model_patch": ""
+  },
+  "sympy__sympy-27462": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "sympy__sympy-27462",
+    "model_patch": ""
+  },
+  "theoehrly__fast-f1-699": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "theoehrly__fast-f1-699",
+    "model_patch": ""
+  },
+  "yt-dlp__yt-dlp-11425": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "yt-dlp__yt-dlp-11425",
+    "model_patch": ""
+  },
+  "kozea__weasyprint-2303": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "kozea__weasyprint-2303",
+    "model_patch": ""
+  },
+  "beeware__briefcase-2085": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "beeware__briefcase-2085",
+    "model_patch": "diff --git a/src/briefcase/commands/base.py b/src/briefcase/commands/base.py\nindex 418826f2..3620c958 100644\n--- a/src/briefcase/commands/base.py\n+++ b/src/briefcase/commands/base.py\n@@ -1,1166 +1,2 @@\n-from __future__ import annotations\n-\n-import argparse\n-import importlib\n-import importlib.metadata\n-import inspect\n-import os\n-import platform\n-import re\n-import subprocess\n-import sys\n-from abc import ABC, abstractmethod\n-from argparse import RawDescriptionHelpFormatter\n-from pathlib import Path\n-from typing import Any\n-\n-from cookiecutter import exceptions as cookiecutter_exceptions\n-from cookiecutter.repository import is_repo_url\n-from packaging.specifiers import InvalidSpecifier, Specifier\n-from packaging.version import Version\n-from platformdirs import PlatformDirs\n-\n-if sys.version_info >= (3, 11):  # pragma: no-cover-if-lt-py311\n-    import tomllib\n-else:  # pragma: no-cover-if-gte-py311\n-    import tomli as tomllib\n-\n-import briefcase\n-from briefcase import __version__\n-from briefcase.config import AppConfig, GlobalConfig, parse_config\n-from briefcase.console import MAX_TEXT_WIDTH, Console, Log\n-from briefcase.exceptions import (\n-    BriefcaseCommandError,\n-    BriefcaseConfigError,\n-    InvalidTemplateBranch,\n-    InvalidTemplateRepository,\n-    MissingAppMetadata,\n-    NetworkFailure,\n-    UnsupportedHostError,\n-    UnsupportedPythonVersion,\n-)\n-from briefcase.integrations.base import ToolCache\n-from briefcase.integrations.file import File\n-from briefcase.integrations.subprocess import Subprocess\n-from briefcase.platforms import get_output_formats, get_platforms\n-\n-\n-def create_config(klass, config, msg):\n-    try:\n-        return klass(**config)\n-    except TypeError as e:\n-        # Inspect the GlobalConfig constructor to find which\n-        # parameters are required and don't have a default value.\n-        required_args = {\n-            name\n-            for name, param in inspect.signature(klass.__init__).parameters.items()\n-            if param.default == inspect._empty and name not in {\"self\", \"kwargs\"}\n-        }\n-        missing_args = required_args - config.keys()\n-        missing = \", \".join(f\"'{arg}'\" for arg in sorted(missing_args))\n-        raise BriefcaseConfigError(f\"{msg} is incomplete (missing {missing})\") from e\n-\n-\n-def full_options(state, options):\n-    \"\"\"Merge command state with keyword arguments.\n-\n-    Command state takes precedence over any keyword argument.\n-\n-    :param state: The current command state. Can be ``None``.\n-    :param options: The base options.\n-    :returns: A dictionary containing all of ``options``, with any values\n-        provided in ``state`` overriding the base ``options`` values.\n-    \"\"\"\n-    if state is not None:\n-        full = options.copy()\n-        full.update(state)\n-    else:\n-        full = options\n-\n-    return full\n-\n-\n-def split_passthrough(args):\n-    try:\n-        pos = args.index(\"--\")\n-    except ValueError:\n-        return args, []\n-    else:\n-        return args[:pos], args[pos + 1 :]\n-\n-\n-def parse_config_overrides(config_overrides: list[str] | None) -> dict[str, Any]:\n-    \"\"\"Parse command line -C/--config option overrides.\n-\n-    :param config_overrides: The values passed in as configuration overrides. Each value\n-        *should* be a \"key=<valid TOML>\" string.\n-    :returns: A dictionary of app configuration keys to override and their new values.\n-    :raises BriefcaseCommandError: if any of the values can't be parsed as valid TOML.\n-    \"\"\"\n-    overrides = {}\n-    if config_overrides:\n-        for override in config_overrides:\n-            try:\n-                # Do initial checks of the key being overridden.\n-                # These catch cases that would be valid TOML, but would result\n-                # in invalid app configurations.\n-                key, _ = override.split(\"=\", 1)\n-                if \".\" in key:\n-                    raise BriefcaseConfigError(\n-                        \"Can't override multi-level configuration keys.\"\n-                    )\n-                elif key == \"app_name\":\n-                    raise BriefcaseConfigError(\"The app name cannot be overridden.\")\n-\n-                # Now actually parse the value\n-                overrides.update(tomllib.loads(override))\n-            except ValueError as e:\n-                raise BriefcaseConfigError(\n-                    f\"Unable to parse configuration override {override}\"\n-                ) from e\n-    return overrides\n-\n-\n-class BaseCommand(ABC):\n-    cmd_line = \"briefcase {command} {platform} {output_format}\"\n-    supported_host_os = {\"Darwin\", \"Linux\", \"Windows\"}\n-    supported_host_os_reason = f\"This command is not supported on {platform.system()}.\"\n-\n-    # defined by platform-specific subclasses\n-    command: str\n-    description: str\n-    platform: str\n-    output_format: str\n-    # supports passing extra command line arguments to subprocess\n-    allows_passthrough = False\n-    # if specified for a platform, then any template for that platform must declare\n-    # compatibility with that version epoch. An epoch begins when a breaking change is\n-    # introduced for a platform such that older versions of a template are incompatible\n-    platform_target_version: str | None = None\n-\n-    def __init__(\n-        self,\n-        logger: Log,\n-        console: Console,\n-        tools: ToolCache = None,\n-        apps: dict = None,\n-        base_path: Path = None,\n-        data_path: Path = None,\n-        is_clone: bool = False,\n-    ):\n-        \"\"\"Base for all Commands.\n-\n-        :param logger: Logger for console and logfile.\n-        :param console: Facilitates console interaction and input solicitation.\n-        :param tools: Cache of tools populated by Commands as they are required.\n-        :param apps: Dictionary of project's Apps keyed by app name.\n-        :param base_path: Base directory for Briefcase project.\n-        :param data_path: Base directory for Briefcase tools, support packages, etc.\n-        :param is_clone: Flag that Command was triggered by the user's requested\n-            Command; for instance, RunCommand can invoke UpdateCommand and/or\n-            BuildCommand.\n-        \"\"\"\n-        if base_path is None:\n-            self.base_path = Path.cwd()\n-        else:\n-            self.base_path = base_path\n-        self.data_path = self.validate_data_path(data_path)\n-        self.apps = {} if apps is None else apps\n-        self.is_clone = is_clone\n-\n-        self.tools = tools or ToolCache(\n-            logger=logger,\n-            console=console,\n-            base_path=self.data_path / \"tools\",\n-        )\n-\n-        # Immediately add tools that must be always available\n-        Subprocess.verify(tools=self.tools)\n-        File.verify(tools=self.tools)\n-\n-        if not is_clone:\n-            self.validate_locale()\n-\n-        self.global_config = None\n-        self._briefcase_toml: dict[AppConfig, dict[str, ...]] = {}\n-\n-    @property\n-    def logger(self):\n-        return self.tools.logger\n-\n-    @property\n-    def input(self):\n-        return self.tools.input\n-\n-    def validate_data_path(self, data_path):\n-        \"\"\"Validate provided data path or determine OS-specific path.\n-\n-        If a data path is provided during construction, use it. This usually indicates\n-        we're under test conditions. If there's no data path provided, look for a\n-        BRIEFCASE_HOME environment variable. If that isn't defined, use a platform-\n-        specific default data path.\n-        \"\"\"\n-        if data_path is None:\n-            try:\n-                briefcase_home = os.environ[\"BRIEFCASE_HOME\"]\n-                data_path = Path(briefcase_home).resolve()\n-                # Path(\"\") converts to \".\", so check for that edge case.\n-                if briefcase_home == \"\" or not data_path.is_dir():\n-                    raise BriefcaseCommandError(\n-                        \"The path specified by BRIEFCASE_HOME does not exist.\"\n-                    )\n-            except KeyError:\n-                if platform.system() == \"Darwin\":  # pragma: no-cover-if-not-macos\n-                    # macOS uses a bundle name, rather than just the app name\n-                    app_name = \"org.beeware.briefcase\"\n-                else:  # pragma: no-cover-if-is-macos\n-                    app_name = \"briefcase\"\n-\n-                data_path = PlatformDirs(\n-                    appname=app_name,\n-                    appauthor=\"BeeWare\",\n-                ).user_cache_path\n-\n-        data_path = os.fsdecode(data_path)\n-\n-        if \" \" in data_path:\n-            raise BriefcaseCommandError(\n-                f\"\"\"\n-The location Briefcase will use to store tools and support files:\n-\n-    {data_path}\n-\n-contains spaces. This will cause problems with some tools, preventing\n-you from building and packaging applications.\n-\n-You can set the environment variable BRIEFCASE_HOME to specify\n-a custom location for Briefcase's tools.\n-\n-\"\"\"\n-            )\n-\n-        if not os.path.exists(data_path):\n-            try:\n-                # The Windows Store version of Python can redirect filesystem\n-                # interactions within %LOCALAPPDATA% to a sandboxed location.\n-                # To bypass this, the Briefcase cache directory creation is\n-                # performed via ``cmd.exe`` in a different process. Once this\n-                # directory exists in the \"real\" %LOCALAPPDATA%, Windows will\n-                # allow normal interactions without attempting to sandbox them.\n-                if platform.system() == \"Windows\":  # pragma: no-cover-if-not-windows\n-                    subprocess.run(\n-                        [\"mkdir\", data_path],\n-                        shell=True,\n-                        check=True,\n-                        stdout=subprocess.DEVNULL,\n-                        stderr=subprocess.DEVNULL,\n-                    )\n-                else:  # pragma: no-cover-if-is-windows\n-                    os.makedirs(data_path, exist_ok=True)\n-            except (subprocess.CalledProcessError, OSError):\n-                raise BriefcaseCommandError(\n-                    f\"\"\"\n-Failed to create the Briefcase directory to store tools and support files:\n-\n-    {data_path}\n-\n-You can set the environment variable BRIEFCASE_HOME to specify\n-a custom location for Briefcase's tools.\n-\n-\"\"\"\n-                )\n-\n-        return Path(data_path)\n-\n-    def validate_locale(self):\n-        \"\"\"Validate the system's locale is compatible.\"\"\"\n-        if self.tools.host_os == \"Linux\" and self.tools.system_encoding != \"UTF-8\":\n-            self.logger.warning(\n-                f\"\"\"\n-*************************************************************************\n-** WARNING: Default system encoding is not supported                   **\n-*************************************************************************\n-\n-    Briefcase and the third-party tools it uses only support UTF-8.\n-\n-    The detected default system encoding is {self.tools.system_encoding}.\n-\n-    Briefcase will proceed but some console output could be corrupted and\n-    created files or artefacts may contain corrupted text.\n-\n-    Update your system's encoding to UTF-8 to avoid issues.\n-\n-*************************************************************************\n-\"\"\"\n-            )\n-\n-    def _command_factory(self, command_name: str):\n-        \"\"\"Command factory for the current platform and format.\n-\n-        :param command_name: name of Command (e.g. 'create', 'build', 'run', etc.)\n-        :return: instantiated Command\n-        \"\"\"\n-        format_module = importlib.import_module(self.__module__)\n-        command = getattr(format_module, command_name)(\n-            base_path=self.base_path,\n-            apps=self.apps,\n-            logger=self.logger,\n-            console=self.input,\n-            tools=self.tools,\n-            is_clone=True,\n-        )\n-        command.clone_options(self)\n-        return command\n-\n-    @property\n-    def create_command(self):\n-        \"\"\"Create Command factory for the same platform and format.\"\"\"\n-        return self._command_factory(\"create\")\n-\n-    @property\n-    def update_command(self):\n-        \"\"\"Update Command factory for the same platform and format.\"\"\"\n-        return self._command_factory(\"update\")\n-\n-    @property\n-    def build_command(self):\n-        \"\"\"Build Command factory for the same platform and format.\"\"\"\n-        return self._command_factory(\"build\")\n-\n-    @property\n-    def run_command(self):\n-        \"\"\"Run Command factory for the same platform and format.\"\"\"\n-        return self._command_factory(\"run\")\n-\n-    @property\n-    def package_command(self):\n-        \"\"\"Package Command factory for the same platform and format.\"\"\"\n-        return self._command_factory(\"package\")\n-\n-    @property\n-    def publish_command(self):\n-        \"\"\"Publish Command factory for the same platform and format.\"\"\"\n-        return self._command_factory(\"publish\")\n-\n-    def template_cache_path(self, template) -> Path:\n-        \"\"\"The path where Briefcase keeps template checkouts.\n-\n-        :param template: The URL for the template that will be cached locally.\n-        \"\"\"\n-        template = template.rstrip(\"/\")\n-        tail = template.split(\"/\")[-1]\n-        cache_name = tail.rsplit(\".git\")[0]\n-        return self.data_path / \"templates\" / cache_name\n-\n-    def build_path(self, app) -> Path:\n-        \"\"\"The path in which all platform artefacts for the app will be built.\n-\n-        :param app: The app config\n-        \"\"\"\n-        return self.base_path / \"build\" / app.app_name / self.platform.lower()\n-\n-    @property\n-    def dist_path(self) -> Path:\n-        \"\"\"The path for all applications for this command's platform.\"\"\"\n-        return self.base_path / \"dist\"\n-\n-    def bundle_path(self, app) -> Path:\n-        \"\"\"The path to the bundle for the app in the output format.\n-\n-        The bundle is the template-generated source form of the app. The path will\n-        usually be a directory, the existence of which is indicative that the template\n-        has been rolled out for an app. The leaf of this path is the base of the content\n-        generated from template.\n-\n-        :param app: The app config\n-        \"\"\"\n-        return self.build_path(app) / self.output_format.lower()\n-\n-    @abstractmethod\n-    def binary_path(self, app) -> Path:\n-        \"\"\"The path to the executable artefact for the app in the output format.\n-\n-        This may be a binary file produced by compilation; however, if the output format\n-        doesn't require compilation, it may be the same as the bundle path (assuming the\n-        bundle path is inherently \"executable\"), or a path that reasonably represents\n-        the thing that can be executed.\n-\n-        :param app: The app config\n-        \"\"\"\n-\n-    def binary_executable_path(self, app) -> Path:\n-        \"\"\"The path to the actual binary object for the app in the output format.\n-\n-        For most platforms, this will be the same as the binary path. However, for\n-        platforms that use an \"executable bundle\" (e.g., macOS), this will be actual\n-        binary that is embedded in the bundle.\n-\n-        :param app: The app config\n-        \"\"\"\n-        return self.binary_path(app)\n-\n-    def unbuilt_executable_path(self, app) -> Path:\n-        \"\"\"The path to the unbuilt form of the binary object for the app.\n-\n-        The pre-built stub binary may need to undergo some manipulation before it can be\n-        used; to mark that this manipulation is required, the \"unbuilt\" binary has a\n-        \"raw\" name that doesn't involve any app details. The build step moves the binary\n-        to the final name.\n-\n-        :param app: The app config\n-        \"\"\"\n-        return self.binary_executable_path(app).parent / (\n-            \"Stub\" + self.binary_executable_path(app).suffix\n-        )\n-\n-    def briefcase_toml(self, app: AppConfig) -> dict[str, ...]:\n-        \"\"\"Load the ``briefcase.toml`` file provided by the app template.\n-\n-        :param app: The config object for the app\n-        :return: The contents of ``briefcase.toml``\n-        \"\"\"\n-        try:\n-            return self._briefcase_toml[app]\n-        except KeyError:\n-            try:\n-                with (self.bundle_path(app) / \"briefcase.toml\").open(\"rb\") as f:\n-                    self._briefcase_toml[app] = tomllib.load(f)\n-            except OSError as e:\n-                raise MissingAppMetadata(self.bundle_path(app)) from e\n-            else:\n-                return self._briefcase_toml[app]\n-\n-    def path_index(self, app: AppConfig, path_name: str) -> str | dict | list:\n-        \"\"\"Return a path from the path index provided by the app template.\n-\n-        Raises KeyError if ``path_name`` is not defined in the index.\n-\n-        :param app: The config object for the app\n-        :param path_name: Name of the filepath to retrieve\n-        :return: filepath for requested path\n-        \"\"\"\n-        return self.briefcase_toml(app)[\"paths\"][path_name]\n-\n-    def template_target_version(self, app: AppConfig) -> str | None:\n-        \"\"\"The target version of Briefcase for the app from ``briefcase.toml``.\n-\n-        This value represents a version epoch specific to the platform. An epoch begins\n-        when a breaking change is introduced. Therefore, this value would remain the\n-        version of Briefcase that introduced a breaking change for a template until\n-        another such change requires a new epoch.\n-\n-        :param app: The config object for the app\n-        :return: target version or None if one isn't specified\n-        \"\"\"\n-        try:\n-            return self.briefcase_toml(app)[\"briefcase\"][\"target_version\"]\n-        except KeyError:\n-            return None\n-\n-    def stub_binary_revision(self, app: AppConfig) -> str:\n-        \"\"\"Obtain the stub binary revision that the template requires.\n-\n-        :param app: The config object for the app\n-        :return: The stub binary revision required by the template.\n-        \"\"\"\n-        return self.path_index(app, \"stub_binary_revision\")\n-\n-    def support_path(self, app: AppConfig) -> Path:\n-        \"\"\"Obtain the path into which the support package should be unpacked.\n-\n-        :param app: The config object for the app\n-        :return: The full path where the support package should be unpacked.\n-        \"\"\"\n-        return self.bundle_path(app) / self.path_index(app, \"support_path\")\n-\n-    def support_revision(self, app: AppConfig) -> str:\n-        \"\"\"Obtain the support package revision that the template requires.\n-\n-        :param app: The config object for the app\n-        :return: The support revision required by the template.\n-        \"\"\"\n-        return self.path_index(app, \"support_revision\")\n-\n-    def cleanup_paths(self, app: AppConfig) -> list[str]:\n-        \"\"\"Obtain the paths generated by the app template that should be cleaned up\n-        prior to release.\n-\n-        :param app: The config object for the app\n-        :return: The list of path globs inside the app template that should be cleaned\n-            up.\n-        \"\"\"\n-        return self.path_index(app, \"cleanup_paths\")\n-\n-    def app_requirements_path(self, app: AppConfig) -> Path:\n-        \"\"\"Obtain the path into which a requirements.txt file should be written.\n-\n-        :param app: The config object for the app\n-        :return: The full path where the requirements.txt file should be written\n-        \"\"\"\n-        return self.bundle_path(app) / self.path_index(app, \"app_requirements_path\")\n-\n-    def app_requirement_installer_args_path(self, app: AppConfig) -> Path:\n-        \"\"\"Obtain the path into which a newline delimited requirement installer args\n-        file should be written.\n-\n-        :param app: The config object for the app\n-        :return: The full path where the file should be written\n-        \"\"\"\n-        return self.bundle_path(app) / self.path_index(\n-            app, \"app_requirement_installer_args_path\"\n-        )\n-\n-    def app_packages_path(self, app: AppConfig) -> Path:\n-        \"\"\"Obtain the path into which requirements should be installed.\n-\n-        :param app: The config object for the app\n-        :return: The full path where application requirements should be installed.\n-        \"\"\"\n-        return self.bundle_path(app) / self.path_index(app, \"app_packages_path\")\n-\n-    def app_path(self, app: AppConfig) -> Path:\n-        \"\"\"Obtain the path into which the application should be installed.\n-\n-        :param app: The config object for the app\n-        :return: The full path where application code should be installed.\n-        \"\"\"\n-        return self.bundle_path(app) / self.path_index(app, \"app_path\")\n-\n-    def app_module_path(self, app: AppConfig) -> Path:\n-        \"\"\"Find the path for the application module for an app.\n-\n-        :param app: The config object for the app\n-        :returns: The Path to the dist-info folder.\n-        \"\"\"\n-        app_home = [\n-            path.split(\"/\")\n-            for path in app.sources\n-            if path.rsplit(\"/\", 1)[-1] == app.module_name\n-        ]\n-\n-        if len(app_home) == 0:\n-            raise BriefcaseCommandError(\n-                f\"Unable to find code for application {app.app_name!r}\"\n-            )\n-        elif len(app_home) == 1:\n-            path = Path(str(self.base_path), *app_home[0])\n-        else:\n-            raise BriefcaseCommandError(\n-                f\"Multiple paths in sources found for application {app.app_name!r}\"\n-            )\n-\n-        return path\n-\n-    @property\n-    def briefcase_required_python_version(self):\n-        \"\"\"The major.minor of the minimum Python version required by Briefcase itself.\n-\n-        This is extracted from packaging metadata.\n-        \"\"\"\n-        # Native format is \">=3.8\"\n-        return tuple(\n-            int(v)\n-            for v in importlib.metadata.metadata(\"briefcase\")[\"Requires-Python\"]\n-            .split(\"=\")[1]\n-            .strip()\n-            .split(\".\")\n-        )\n-\n-    @property\n-    def python_version_tag(self):\n-        \"\"\"The major.minor of the Python version in use, as a string.\n-\n-        This is used as a repository label/tag to identify the appropriate templates,\n-        etc. to use.\n-        \"\"\"\n-        return (\n-            f\"{self.tools.sys.version_info.major}.{self.tools.sys.version_info.minor}\"\n-        )\n-\n-    def verify_host(self):\n-        \"\"\"Verify the host OS is supported by the Command.\"\"\"\n-        if self.tools.host_os not in self.supported_host_os:\n-            raise UnsupportedHostError(self.supported_host_os_reason)\n-\n-    def verify_tools(self):\n-        \"\"\"Verify that the tools needed to run this Command exist.\n-\n-        Raises MissingToolException if a required system tool is missing.\n-        \"\"\"\n-\n-    def finalize_app_config(self, app: AppConfig):\n-        \"\"\"Finalize the application config.\n-\n-        Some app configurations (notably, Linux system packages like .deb) have\n-        configurations that are deeper than other platforms, because they need to\n-        include components that are dependent on command-line arguments. They may also\n-        require the existence of system tools to complete configuration.\n-\n-        The final app configuration merges those \"deep\" properties into the app\n-        configuration, and performs any other app-specific platform configuration and\n-        verification that is required as a result of command-line arguments.\n-\n-        :param app: The app configuration to finalize.\n-        \"\"\"\n-\n-    def finalize(self, app: AppConfig | None = None):\n-        \"\"\"Finalize Briefcase configuration.\n-\n-        This will:\n-\n-        1. Ensure that the host has been verified\n-        2. Ensure that the platform tools have been verified\n-        3. Ensure that app configurations have been finalized.\n-\n-        App finalization will only occur once per invocation.\n-\n-        :param app: If provided, the specific app configuration\n-            to finalize. By default, all apps will be finalized.\n-        \"\"\"\n-        self.verify_host()\n-        self.verify_tools()\n-\n-        if app is None:\n-            for app in self.apps.values():\n-                if hasattr(app, \"__draft__\"):\n-                    self.finalize_app_config(app)\n-                    delattr(app, \"__draft__\")\n-        else:\n-            if hasattr(app, \"__draft__\"):\n-                self.finalize_app_config(app)\n-                delattr(app, \"__draft__\")\n-\n-    def verify_app(self, app: AppConfig):\n-        \"\"\"Verify the app is compatible and the app tools are available.\n-\n-        This is the last step of verification for a Command before running the Command's\n-        business logic. It runs _after_ pre-requisite Commands have been verified and\n-        run.\n-\n-        :param app: app configuration\n-        \"\"\"\n-        self.verify_app_template(app)\n-        self.verify_app_tools(app)\n-        self.verify_required_python(app)\n-\n-    def verify_app_tools(self, app: AppConfig):\n-        \"\"\"Verify that tools needed to run the command for this app exist.\"\"\"\n-\n-    def verify_app_template(self, app: AppConfig):\n-        \"\"\"Verify the template targets the same Briefcase version as the Command.\n-\n-        :param app: app configuration\n-        \"\"\"\n-\n-        # Skip this check if the template isn't rolled out\n-        # or if the command doesn't support templates\n-        try:\n-            template_target_version = self.template_target_version(app)\n-        except (MissingAppMetadata, NotImplementedError):\n-            return\n-\n-        if self.platform_target_version != template_target_version:\n-            raise BriefcaseCommandError(\n-                f\"\"\"\\\n-The app template used to generate this app is not compatible with this version\n-of Briefcase.\n-\n-If the app was generated with an earlier version of Briefcase using the default\n-Briefcase template, you can run:\n-\n-     $ briefcase create {self.platform} {self.output_format}\n-\n-to re-generate your app with a compatible version of the template.\n-\n-If you are using a custom template, you'll need to update the template to correct\n-any compatibility problems, and then add the compatibility declaration.\n-\"\"\"\n-            )\n-\n-    def verify_required_python(self, app: AppConfig):\n-        \"\"\"Verify that the running version of Python meets the project's specifications.\"\"\"\n-\n-        requires_python = getattr(self.global_config, \"requires_python\", None)\n-        if not requires_python:\n-            return\n-\n-        try:\n-            spec = Specifier(requires_python)\n-        except InvalidSpecifier as e:\n-            raise BriefcaseConfigError(\n-                f\"Invalid requires-python in pyproject.toml: {e}\"\n-            ) from e\n-\n-        running_version = platform.python_version()\n-\n-        if not spec.contains(running_version, prereleases=True):\n-            raise UnsupportedPythonVersion(\n-                version_specifier=requires_python, running_version=running_version\n-            )\n-\n-    def parse_options(self, extra):\n-        \"\"\"Parse the command line arguments for the Command.\n-\n-        After the initial ArgumentParser runs to choose the Command for the selected\n-        platform and format, a new ArgumentParser is created here to parse the remaining\n-        command line arguments specific to the Command. Additionally, the default\n-        options for disabling input, log verbosity, and log saving are parsed out and\n-        saved to the Command.\n-\n-        :param extra: the remaining command line arguments after the initial\n-            ArgumentParser runs over the command line.\n-        :return: dictionary of parsed arguments for Command, and a dictionary of parsed\n-            configuration overrides.\n-        \"\"\"\n-        default_format = getattr(\n-            get_platforms().get(self.platform), \"DEFAULT_OUTPUT_FORMAT\", None\n-        )\n-        # only show supported formats for Commands that support formats\n-        if default_format is not None and self.command not in {\"new\", \"dev\", \"upgrade\"}:\n-            formats = list(get_output_formats(self.platform).keys())\n-            formats[formats.index(default_format)] = f\"{default_format} (default)\"\n-            supported_formats_helptext = (\n-                f\"Supported formats:\\n  {', '.join(sorted(formats, key=str.lower))}\"\n-            )\n-        else:\n-            supported_formats_helptext = \"\"\n-\n-        parser = argparse.ArgumentParser(\n-            prog=self.cmd_line.format(\n-                command=self.command,\n-                platform=self.platform,\n-                output_format=self.output_format,\n-            ),\n-            description=self.input.textwrap(\n-                f\"{self.description}\\n\\n{supported_formats_helptext}\"\n-            ),\n-            formatter_class=(\n-                lambda prog: RawDescriptionHelpFormatter(prog, width=MAX_TEXT_WIDTH)\n-            ),\n-        )\n-\n-        self.add_default_options(parser)\n-        self.add_options(parser)\n-\n-        # If the command allows passthrough arguments, add an option for the help,\n-        # then process the argument list to strip out the passthrough args.\n-        if self.allows_passthrough:\n-            parser.add_argument(\n-                \"--\",\n-                dest=\"passthrough\",\n-                metavar=\"ARGS ...\",\n-                required=False,\n-                help=\"Arguments to pass to the app\",\n-            )\n-            args, passthrough = split_passthrough(extra)\n-        else:\n-            args = extra\n-\n-        # Parse the full set of command line options from the content\n-        # remaining after the basic command/platform/output format\n-        # has been extracted.\n-        options = vars(parser.parse_args(args))\n-\n-        if self.allows_passthrough:\n-            options[\"passthrough\"] = passthrough\n-\n-        # Extract the base default options onto the command\n-        self.input.enabled = options.pop(\"input_enabled\")\n-        self.logger.verbosity = options.pop(\"verbosity\")\n-        self.logger.save_log = options.pop(\"save_log\")\n-\n-        # Parse the configuration overrides\n-        overrides = parse_config_overrides(options.pop(\"config_overrides\"))\n-\n-        return options, overrides\n-\n-    def clone_options(self, command):\n-        \"\"\"Clone options from one command to this one.\n-\n-        :param command: The command whose options are to be cloned\n-        \"\"\"\n-\n-    def add_default_options(self, parser):\n-        \"\"\"Add the default options that exist on *all* commands.\n-\n-        :param parser: a stub argparse parser for the command.\n-        \"\"\"\n-        parser.add_argument(\n-            \"-C\",\n-            \"--config\",\n-            dest=\"config_overrides\",\n-            action=\"append\",\n-            metavar=\"KEY=VALUE\",\n-            help=\"Override the value of the app configuration item KEY with VALUE\",\n-        )\n-        parser.add_argument(\n-            \"-v\",\n-            \"--verbosity\",\n-            action=\"count\",\n-            default=0,\n-            help=\"Enable verbose logging. Use -vv and -vvv to increase logging verbosity\",\n-        )\n-        parser.add_argument(\"-V\", \"--version\", action=\"version\", version=__version__)\n-        parser.add_argument(\n-            \"--no-input\",\n-            action=\"store_false\",\n-            default=True,\n-            dest=\"input_enabled\",\n-            help=(\n-                \"Don't ask for user input. If any action would be destructive, \"\n-                \"an error will be raised; otherwise, default answers will be \"\n-                \"assumed\"\n-            ),\n-        )\n-        parser.add_argument(\n-            \"--log\",\n-            action=\"store_true\",\n-            dest=\"save_log\",\n-            help=\"Save a detailed log to file. By default, this log file is only created for critical errors\",\n-        )\n-\n-    def _add_update_options(\n-        self,\n-        parser,\n-        context_label=\"\",\n-        update=True,\n-    ):\n-        \"\"\"Internal utility method for adding common update options.\n-\n-        :param parser: The parser to which options should be added.\n-        :param context_label: Label text that will be added to the end of the help text\n-            to describe when the update will be applied (e.g., \"before building\")\n-        :param update: Should the --update and --no-update options be exposed?\n-        \"\"\"\n-        if update:\n-            parser.add_argument(\n-                \"-u\",\n-                \"--update\",\n-                action=\"store_true\",\n-                help=f\"Update the app{context_label}\",\n-            )\n-\n-        parser.add_argument(\n-            \"-r\",\n-            \"--update-requirements\",\n-            action=\"store_true\",\n-            help=f\"Update requirements for the app{context_label}\",\n-        )\n-\n-        parser.add_argument(\n-            \"--update-support\",\n-            action=\"store_true\",\n-            help=f\"Update support package for the app{context_label}\",\n-        )\n-\n-        parser.add_argument(\n-            \"--update-stub\",\n-            action=\"store_true\",\n-            help=f\"Update stub binary for the app{context_label}\",\n-        )\n-\n-        parser.add_argument(\n-            \"--update-resources\",\n-            action=\"store_true\",\n-            help=f\"Update app resources (icons, splash screens, etc){context_label}\",\n-        )\n-\n-        if update:\n-            parser.add_argument(\n-                \"--no-update\",\n-                action=\"store_true\",\n-                help=f\"Prevent any automated update{context_label}\",\n-            )\n-\n-    def _add_test_options(self, parser, context_label):\n-        \"\"\"Internal utility method for adding common test-related options.\n-\n-        :param parser: The parser to which options should be added.\n-        :param context_label: Label text for commands; the capitalized action being\n-            performed (e.g., \"Build\", \"Run\",...)\n-        \"\"\"\n-        parser.add_argument(\n-            \"--test\",\n-            dest=\"test_mode\",\n-            action=\"store_true\",\n-            help=f\"{context_label} the app in test mode\",\n-        )\n-\n-    def add_options(self, parser):\n-        \"\"\"Add any options that this command needs to parse from the command line.\n-\n-        :param parser: a stub argparse parser for the command.\n-        \"\"\"\n-\n-    def parse_config(self, filename, overrides):\n-        try:\n-            with open(filename, \"rb\") as config_file:\n-                # Parse the content of the pyproject.toml file, extracting\n-                # any platform and output format configuration for each app,\n-                # creating a single set of configuration options.\n-                global_config, app_configs = parse_config(\n-                    config_file,\n-                    platform=self.platform,\n-                    output_format=self.output_format,\n-                    logger=self.logger,\n-                )\n-\n-                # Create the global config\n-                global_config.update(overrides)\n-                self.global_config = create_config(\n-                    klass=GlobalConfig,\n-                    config=global_config,\n-                    msg=\"Global configuration\",\n-                )\n-\n-                for app_name, app_config in app_configs.items():\n-                    # Construct an AppConfig object with the final set of\n-                    # configuration options for the app.\n-                    app_config.update(overrides)\n-                    self.apps[app_name] = create_config(\n-                        klass=AppConfig,\n-                        config=app_config,\n-                        msg=f\"Configuration for '{app_name}'\",\n-                    )\n-\n-        except OSError as e:\n-            raise BriefcaseConfigError(\n-                f\"\"\"\\\n-Configuration file not found.\n-\n-Did you run Briefcase in a project directory that contains {filename.name!r}?\"\"\"\n-            ) from e\n-\n-    def update_cookiecutter_cache(self, template: str, branch=\"master\"):\n-        \"\"\"Ensure that we have a current checkout of a template path.\n-\n-        If the path is a local path, use the path as is.\n-\n-        If the path is a URL, look for a local cache; if one exists, update it,\n-        including checking out the required branch.\n-\n-        :param template: The template URL or path.\n-        :param branch: The template branch to use. Default: ``master``\n-        :return: The path to the cached template. This may be the originally\n-            provided path if the template was a file path.\n-        \"\"\"\n-        if is_repo_url(template):\n-            # The app template is a repository URL.\n-            #\n-            # Look for a Briefcase cache of the template.\n-            cached_template = self.template_cache_path(template)\n-\n-            if cached_template.exists():\n-                # There is a pre-existing cache of the template. Attempt to update it;\n-                # if the fetch fails, use the existing state of the cache. Any other\n-                # failure is surfaced to the user.\n-                try:\n-                    repo = self.tools.git.Repo(cached_template)\n-                except self.tools.git.exc.GitError:\n-                    # Template repository is in a weird state. Delete it\n-                    self.logger.warning(\n-                        \"Template cache is in a weird state. Getting a clean clone.\"\n-                    )\n-                    self.tools.shutil.rmtree(cached_template)\n-\n-            if not cached_template.exists():\n-                # There's no pre-existing template. It's either the first time seeing\n-                # the template, or the template was in a weird state. Perform a blobless\n-                # clone.\n-                try:\n-                    self.logger.info(f\"Cloning template {template!r}...\")\n-                    cached_template.mkdir(exist_ok=True, parents=True)\n-                    repo = self.tools.git.Repo.clone_from(\n-                        url=template,\n-                        to_path=cached_template,\n-                        filter=[\"blob:none\"],\n-                        no_checkout=True,\n-                    )\n-                except KeyboardInterrupt:\n-                    # The user has aborted the initial clone. Git is fairly resilient to\n-                    # being interrupted, but if the *initial* clone fails, it's very\n-                    # hard to recover. To avoid problems on the next run, remove the\n-                    # partial repo clone.\n-                    if cached_template.exists():\n-                        self.tools.shutil.rmtree(cached_template)\n-                    raise\n-                except self.tools.git.exc.GitError as e:\n-                    # The clone failed; to make sure the repo is in a clean state, clean up\n-                    # any partial remnants of this initial clone.\n-                    # If we're getting a GitError, we know the directory must exist.\n-                    self.tools.shutil.rmtree(cached_template)\n-                    git_fatal_message = re.findall(r\"(?<=fatal: ).*?$\", e.stderr, re.S)\n-                    if git_fatal_message:\n-                        # GitError captures stderr with single quotes. Because the regex above\n-                        # takes everything after git's \"fatal\" message, we need to strip that final single quote.\n-                        hint = git_fatal_message[0].rstrip(\"'\").strip()\n-\n-                        # git is inconsistent with capitalisation of the first word of the message\n-                        # and about periods at the end of the message.\n-                        hint = f\"{hint[0].upper()}{hint[1:]}{'' if hint[-1] == '.' else '.'}\"\n-                    else:\n-                        hint = (\n-                            \"This may be because your computer is offline, or \"\n-                            \"because the repository URL is incorrect.\"\n-                        )\n-\n-                    raise BriefcaseCommandError(\n-                        f\"Unable to clone repository {template!r}.\\n\\n{hint}\"\n-                    ) from e\n-\n-            try:\n-                # Raises ValueError if \"origin\" isn't a valid remote\n-                remote = repo.remote(name=\"origin\")\n-                # Ensure the existing repo's origin URL points to the location\n-                # being requested. A difference can occur, for instance, if a\n-                # fork of the template is used.\n                 remote.set_url(new_url=template, old_url=remote.url)\n-                try:\n-                    # Attempt to update the repository\n-                    remote.fetch()\n-                except self.tools.git.exc.GitCommandError as e:\n-                    # We are offline, or otherwise unable to contact the origin git\n-                    # repo. It's OK to continue; but capture the error in the log and\n-                    # warn the user that the template may be stale.\n-                    self.logger.debug(str(e))\n-                    self.logger.warning(\n-                        \"\"\"\n-*************************************************************************\n-** WARNING: Unable to update template                                  **\n-*************************************************************************\n-\n-    Briefcase is unable the update the application template. This\n-    may be because your computer is currently offline. Briefcase will\n-    use existing template without updating.\n-\n-*************************************************************************\n-\"\"\"\n-                    )\n-\n-                try:\n-                    # Check out the branch for the required version tag.\n-                    head = remote.refs[branch]\n-\n-                    self.logger.info(\n-                        f\"Using existing template (sha {head.commit.hexsha}, \"\n-                        f\"updated {head.commit.committed_datetime.strftime('%c')})\"\n-                    )\n-                    head.checkout()\n-                except IndexError as e:\n-                    # No branch exists for the requested version.\n-                    raise InvalidTemplateBranch(template, branch) from e\n-            except (ValueError, self.tools.git.exc.GitError) as e:\n-                raise BriefcaseCommandError(\n-                    \"Unable to check out template branch.\\n\"\n-                    \"\\n\"\n-                    \"This may be because your computer is offline, or because the template repository\\n\"\n-                    \"is in a weird state. If you have a stable network connection, try deleting:\\n\"\n-                    \"\\n\"\n-                    f\"    {cached_template}\\n\"\n-                    \"\\n\"\n-                    \"and retrying your command.\"\n-                ) from e\n-        else:\n-            # If this isn't a repository URL, treat it as a local directory\n-            cached_template = template\n-\n-        return cached_template\n-\n-    def _generate_template(self, template, branch, output_path, extra_context):\n-        \"\"\"Ensure the named template is up-to-date for the given branch, and roll out\n-        that template.\n-\n-        :param template: The template URL or path to generate\n-        :param branch: The branch of the template to use\n-        :param output_path: The filesystem path where the template will be generated.\n-        :param extra_context: Extra context to pass to the cookiecutter template\n-        \"\"\"\n-        # Make sure we have an updated cookiecutter template,\n-        # checked out to the right branch\n-        cached_template = self.update_cookiecutter_cache(\n-            template=template,\n-            branch=branch,\n-        )\n-\n-        self.logger.configure_stdlib_logging(\"cookiecutter\")\n-        try:\n-            # Unroll the template.\n-            self.tools.cookiecutter(\n-                str(cached_template),\n-                no_input=True,\n-                output_dir=str(output_path),\n-                checkout=branch,\n-                # Use a copy to prevent changes propagating among tests while test suite is running\n-                extra_context=extra_context.copy(),\n-                # Store replay data in the Briefcase template cache instead of ~/.cookiecutter_replay\n-                default_config={\"replay_dir\": str(self.template_cache_path(\".replay\"))},\n-            )\n-        except subprocess.CalledProcessError as e:\n-            # Computer is offline\n-            # status code == 128 - certificate validation error.\n-            raise NetworkFailure(\"clone template repository\") from e\n-        except cookiecutter_exceptions.RepositoryNotFound as e:\n-            # Either the template path is invalid,\n-            # or it isn't a cookiecutter template (i.e., no cookiecutter.json)\n-            raise InvalidTemplateRepository(template) from e\n-        except cookiecutter_exceptions.RepositoryCloneFailed as e:\n-            # Branch does not exist.\n-            raise InvalidTemplateBranch(template, branch) from e\n-        except cookiecutter_exceptions.UndefinedVariableInTemplate as e:\n-            raise BriefcaseConfigError(e.message) from e\n-\n-    def generate_template(\n-        self,\n-        template: str | None,\n-        branch: str | None,\n-        output_path: str | Path,\n-        extra_context: dict[str, str],\n-    ) -> None:\n-        # If a branch wasn't supplied through the --template-branch argument,\n-        # use the branch derived from the Briefcase version\n-        version = Version(briefcase.__version__)\n-        if branch is None:\n-            template_branch = f\"v{version.base_version}\"\n-        else:\n-            template_branch = branch\n-\n-        extra_context = extra_context.copy()\n-        # Additional context that can be used for the Briefcase template pyproject.toml\n-        # header to include the version of Briefcase as well as the source of the template.\n-        extra_context.update(\n-            {\n-                \"template_source\": template,\n-                \"template_branch\": template_branch,\n-                \"briefcase_version\": str(version),\n-            }\n-        )\n-\n-        try:\n-            self.logger.info(\n-                f\"Using app template: {template}, branch {template_branch}\"\n-            )\n-            # Unroll the new app template\n-            self._generate_template(\n-                template=template,\n-                branch=template_branch,\n-                output_path=output_path,\n-                extra_context=extra_context,\n-            )\n-        except InvalidTemplateBranch:\n-            # Only use the main template if we're on a development branch of briefcase\n-            # and the user didn't explicitly specify which branch to use.\n-            if version.dev is None or branch is not None:\n-                raise\n-\n-            # Development branches can use the main template.\n-            self.logger.info(\n-                f\"Template branch {template_branch} not found; falling back to development template\"\n-            )\n-\n-            extra_context[\"template_branch\"] = \"main\"\n-            self._generate_template(\n-                template=template,\n-                branch=\"main\",\n-                output_path=output_path,\n-                extra_context=extra_context,\n-            )\n+    remote.set_url(new_url=template, old_url=remote.url)\n"
+  },
+  "cyclotruc__gitingest-134": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "cyclotruc__gitingest-134",
+    "model_patch": "diff --git a/src/main.py b/src/main.py\nindex f2b63fd..b0a4a1c 100644\n--- a/src/main.py\n+++ b/src/main.py\n@@ -169,7 +169,9 @@ if allowed_hosts:\n else:\n     # Define the default allowed hosts for the application\n     default_allowed_hosts = [\"gitingest.com\", \"*.gitingest.com\", \"localhost\", \"127.0.0.1\"]\n+# Handle URLs starting with \"gitingest.com\"\n     allowed_hosts = default_allowed_hosts\n+# Handle URLs starting with \"gitingest.com\"\n \n # Add middleware to enforce allowed hosts\n app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)\n"
+  },
+  "deepset-ai__haystack-8609": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "deepset-ai__haystack-8609",
+    "model_patch": "diff --git a/haystack/components/converters/pypdf.py b/haystack/components/converters/pypdf.py\nindex de55f684..dba6818e 100644\n--- a/haystack/components/converters/pypdf.py\n+++ b/haystack/components/converters/pypdf.py\n@@ -168,7 +168,7 @@ class PyPDFToDocument:\n         \"\"\"\n         return default_to_dict(\n             self,\n-            converter=(serialize_class_instance(self.converter) if self.converter else None),\n+            \n             extraction_mode=str(self.extraction_mode),\n             plain_mode_orientations=self.plain_mode_orientations,\n             plain_mode_space_width=self.plain_mode_space_width,\n"
+  },
+  "instructlab__instructlab-2548": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "instructlab__instructlab-2548",
+    "model_patch": "diff --git a/src/instructlab/cli/model/train.py b/src/instructlab/cli/model/train.py\nindex c3f32c15..cff1cabd 100644\n--- a/src/instructlab/cli/model/train.py\n+++ b/src/instructlab/cli/model/train.py\n@@ -432,13 +432,13 @@ def train(\n         from instructlab.model import accelerated_train\n \n         try:\n-            accelerated_train.accelerated_train(\n-                train_args=train_args,\n-                torch_args=torch_args,\n-                strategy=strategy,\n-                distributed_backend=distributed_backend,\n-                phased_phase1_data=phased_phase1_data,\n-                phased_phase2_data=phased_phase2_data,\n+#            accelerated_train.accelerated_train(\n+#                train_args=train_args,\n+#                torch_args=torch_args,\n+#                strategy=strategy,\n+#                distributed_backend=distributed_backend,\n+#                phased_phase1_data=phased_phase1_data,\n+#                phased_phase2_data=phased_phase2_data,\n                 phased_base_dir=phased_base_dir,\n                 phased_phase1_num_epochs=phased_phase1_num_epochs,\n                 phased_phase1_samples_per_save=phased_phase1_samples_per_save,\n"
+  },
+  "ipython__ipython-14798": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "ipython__ipython-14798",
+    "model_patch": ""
+  },
+  "joke2k__faker-2162": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "joke2k__faker-2162",
+    "model_patch": ""
+  },
+  "keras-team__keras-20443": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "keras-team__keras-20443",
+    "model_patch": ""
+  },
+  "koxudaxi__datamodel-code-generator-2327": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "koxudaxi__datamodel-code-generator-2327",
+    "model_patch": ""
+  },
+  "matplotlib__matplotlib-29258": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "matplotlib__matplotlib-29258",
+    "model_patch": "diff --git a/lib/matplotlib/table.py b/lib/matplotlib/table.py\nindex 21518c4c67..5598b6e99b 100644\n--- a/lib/matplotlib/table.py\n+++ b/lib/matplotlib/table.py\n@@ -120,7 +120,7 @@ substring of 'BRTL'\n \n     def set_fontsize(self, size):\n         \"\"\"Set the text fontsize.\"\"\"\n-        self._text.set_fontsize(size)\n+        self.set_fontsize(size)\n         self.stale = True\n \n     def get_fontsize(self):\n"
+  },
+  "privacyidea__privacyidea-4233": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "privacyidea__privacyidea-4233",
+    "model_patch": ""
+  },
+  "projectmesa__mesa-2523": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "projectmesa__mesa-2523",
+    "model_patch": ""
+  },
+  "pvlib__pvlib-python-2393": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pvlib__pvlib-python-2393",
+    "model_patch": ""
+  },
+  "pydata__xarray-9760": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pydata__xarray-9760",
+    "model_patch": ""
+  },
+  "pylint-dev__pylint-10240": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "pylint-dev__pylint-10240",
+    "model_patch": ""
+  },
+  "python-babel__babel-1163": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "python-babel__babel-1163",
+    "model_patch": ""
+  },
+  "python-control__python-control-1111": {
+    "model_name_or_path": "openai/qwen-coder",
+    "instance_id": "python-control__python-control-1111",
+    "model_patch": ""
+  }
+}

@@ -12,8 +12,8 @@ PhD prototype. Supervisor: Prof Rajesh Vasa, Deakin A2I2. The full thesis, hypot
 |---|---|---|
 | A | Quantized vLLM serving Qwen2.5-Coder-7B with logprobs (Blackwell sm_120) | Done |
 | B | Capture harness: OTel spans to parquet to 14 features, pytest (Week-1 DoD) | Done |
-| C | Mini-SWE-agent wired into capture (done); batch on SWE-bench-Live (next) | In progress |
-| D | Auto labels, train LightGBM, answer H1 (AUROC, lead-time, ablation) | Planned |
+| C | Mini-SWE-agent batch on SWE-bench-Live, real labels via the evaluator | Done |
+| D | LightGBM collapse predictor: AUROC 0.75 signals-only, ~5-step lead, figure | First result (reframed) |
 | E1 | MAST failure-mode head (H2) | Planned |
 | E2 | OpenHands cross-agent transfer (H3) | Planned |
 | E3 | Intervention savings figure | Planned |
@@ -28,11 +28,15 @@ PhD prototype. Supervisor: Prof Rajesh Vasa, Deakin A2I2. The full thesis, hypot
   - `tests/` cover capture round-trip and feature values, hermetic, green.
 - Real Mini-SWE-agent (text-based model on local vLLM) runs through the same capture path via `plumb/agents/mini_wrapper.py` and `scripts/05_run_mini_agent.py`: a toy task returns `Submitted`, with genuine per-token logprobs and per-step bash commands reaching features.
 
-### Remaining and known gaps
-- Batch rollouts on SWE-bench-Live not started; real tasks need the Docker environment (the toy run uses LocalEnvironment).
-- Labels use an exit-code proxy; real labels come from agent `exit_status` plus SWE-bench test verification. `files_touched` is not tracked yet, so unique-file features read 0.
-- Placeholders: `recursion_depth` (stub), `embedding_drift` (cheap hash embedding, swaps to bge-small).
-- No classifier yet.
+### First result
+- On a single-agent **all-failure** corpus (51 trajectories / 1625 steps), a LightGBM model predicts **imminent collapse** (within 4 steps of terminal failure) at **AUROC 0.753 from real-time internal signals alone** (0.806 with step position), beating a position-only baseline (0.680) with non-overlapping bars, under trajectory-grouped CV. Top signal: overconfidence relative to the run's own baseline (`mean_logprob_z`).
+- Deployment: ~97% of failing runs flagged a median ~5 steps before collapse, ~11% of steps flagged, ~3.3× base-rate precision. Figure: `figures/early_warning.png` (`scripts/11_figures.py`). Full writeup in the local brief §19.
+- Intervention savings: halting doomed runs at the alarm recovers **~30–40% of all agent steps** (`figures/intervention_savings.png`, `scripts/12_intervention.py`).
+- This is a **reframe** of H1 (the literal pass-vs-fail head needs a stronger agent for the success class — the 7B never solves SWE-bench-Live).
+
+### Known gaps
+- Single-agent all-failure data: no pass-vs-fail discrimination yet (deferred, budget-gated).
+- `files_touched` not tracked, so unique-file features read 0. Placeholders: `recursion_depth` (stub), `embedding_drift` (hash embedding, swaps to bge-small).
 
 ## Stack
 
@@ -42,9 +46,10 @@ Qwen2.5-Coder-7B-Instruct-AWQ on vLLM (OpenAI API, logprobs). OpenTelemetry GenA
 
 ```
 plumb/        package: schemas, tracing, parse, features
-scripts/      01 serve  02 toy trace  03 parse  04 features
+scripts/      01 serve .. 05 mini agent  06 batch  07 label  08 dataset  09 train  10 warning curve  11 figures
 tests/        hermetic pipeline tests
-data/         raw_traces, trajectories, features, labels, models
+data/         raw_traces, trajectories, features, dataset.parquet, predictions
+figures/      early_warning.png
 notebooks/    analysis (Block D onward)
 ```
 

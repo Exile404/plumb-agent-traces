@@ -1,0 +1,404 @@
+{
+  "delgan__loguru-1297": {
+    "exit_status": "Submitted",
+    "patch_chars": 585,
+    "repo": "Delgan/loguru",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 39}"
+  },
+  "flexget__flexget-4244": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "Flexget/Flexget",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 24}"
+  },
+  "kozea__weasyprint-2300": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "Kozea/WeasyPrint",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 6}"
+  },
+  "pypsa__pypsa-1172": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "PyPSA/PyPSA",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 11}"
+  },
+  "amoffat__sh-744": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "amoffat/sh",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 5}"
+  },
+  "arviz-devs__arviz-2413": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "arviz-devs/arviz",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 6}"
+  },
+  "beancount__beancount-931": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "beancount/beancount",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 32}"
+  },
+  "beetbox__beets-5495": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "beetbox/beets",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 5}"
+  },
+  "beeware__briefcase-2075": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "beeware/briefcase",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 3}"
+  },
+  "bridgecrewio__checkov-6895": {
+    "exit_status": "Submitted",
+    "patch_chars": 1132,
+    "repo": "bridgecrewio/checkov",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 14}"
+  },
+  "conan-io__conan-17123": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "conan-io/conan",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 16}"
+  },
+  "deepset-ai__haystack-8525": {
+    "exit_status": "Submitted",
+    "patch_chars": 565,
+    "repo": "deepset-ai/haystack",
+    "difficulty": "{'files': 2, 'hunks': 6, 'lines': 19}"
+  },
+  "dynaconf__dynaconf-1238": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "dynaconf/dynaconf",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 24}"
+  },
+  "geopandas__geopandas-3471": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "geopandas/geopandas",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 2}"
+  },
+  "hiyouga__llama-factory-7505": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "hiyouga/LLaMA-Factory",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 12}"
+  },
+  "huggingface__smolagents-405": {
+    "exit_status": "Submitted",
+    "patch_chars": 0,
+    "repo": "huggingface/smolagents",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 15}"
+  },
+  "joke2k__faker-2142": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "joke2k/faker",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 30}"
+  },
+  "jupyterlab__jupyter-ai-1294": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "jupyterlab/jupyter-ai",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 38}"
+  },
+  "keras-team__keras-20389": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "keras-team/keras",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 2}"
+  },
+  "koxudaxi__datamodel-code-generator-2259": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "koxudaxi/datamodel-code-generator",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 18}"
+  },
+  "kubernetes-client__python-2303": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "kubernetes-client/python",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 12}"
+  },
+  "matplotlib__matplotlib-29249": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "matplotlib/matplotlib",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 17}"
+  },
+  "modelcontextprotocol__python-sdk-222": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "modelcontextprotocol/python-sdk",
+    "difficulty": "{'files': 2, 'hunks': 8, 'lines': 33}"
+  },
+  "pdm-project__pdm-3255": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "pdm-project/pdm",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 4}"
+  },
+  "privacyidea__privacyidea-4226": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "privacyidea/privacyidea",
+    "difficulty": "{'files': 2, 'hunks': 9, 'lines': 26}"
+  },
+  "projectmesa__mesa-2394": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "projectmesa/mesa",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 21}"
+  },
+  "pvlib__pvlib-python-2249": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "pvlib/pvlib-python",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 13}"
+  },
+  "pybamm-team__pybamm-4865": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "pybamm-team/PyBaMM",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 22}"
+  },
+  "pydata__xarray-9586": {
+    "exit_status": "Submitted",
+    "patch_chars": 0,
+    "repo": "pydata/xarray",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 14}"
+  },
+  "pylint-dev__pylint-10097": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "pylint-dev/pylint",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 19}"
+  },
+  "pypa__twine-1225": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "pypa/twine",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 7}"
+  },
+  "bridgecrewio__checkov-6893": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "bridgecrewio/checkov",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 42}"
+  },
+  "conan-io__conan-17092": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "conan-io/conan",
+    "difficulty": "{'files': 2, 'hunks': 9, 'lines': 41}"
+  },
+  "facebookresearch__hydra-3005": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "facebookresearch/hydra",
+    "difficulty": "{'files': 2, 'hunks': 5, 'lines': 46}"
+  },
+  "feast-dev__feast-5036": {
+    "exit_status": "Submitted",
+    "patch_chars": 422,
+    "repo": "feast-dev/feast",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 41}"
+  },
+  "jupyterlab__jupyter-ai-1125": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "jupyterlab/jupyter-ai",
+    "difficulty": "{'files': 1, 'hunks': 6, 'lines': 56}"
+  },
+  "python-babel__babel-1141": {
+    "exit_status": "Submitted",
+    "patch_chars": 352,
+    "repo": "python-babel/babel",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 5}"
+  },
+  "python-control__python-control-1064": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "python-control/python-control",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 23}"
+  },
+  "qtile__qtile-5154": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "qtile/qtile",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 6}"
+  },
+  "reata__sqllineage-661": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "reata/sqllineage",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 12}"
+  },
+  "reflex-dev__reflex-4087": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "reflex-dev/reflex",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 4}"
+  },
+  "run-llama__llama_deploy-356": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "run-llama/llama_deploy",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 27}"
+  },
+  "shapely__shapely-2224": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "shapely/shapely",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 11}"
+  },
+  "sissbruecker__linkding-984": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "sissbruecker/linkding",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 4}"
+  },
+  "sphinx-doc__sphinx-13261": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "sphinx-doc/sphinx",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 24}"
+  },
+  "stanfordnlp__dspy-1651": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "stanfordnlp/dspy",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 10}"
+  },
+  "streamlink__streamlink-6242": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "streamlink/streamlink",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 5}"
+  },
+  "sympy__sympy-27462": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "sympy/sympy",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 3}"
+  },
+  "theoehrly__fast-f1-699": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "theOehrly/Fast-F1",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 38}"
+  },
+  "yt-dlp__yt-dlp-11425": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "yt-dlp/yt-dlp",
+    "difficulty": "{'files': 1, 'hunks': 10, 'lines': 50}"
+  },
+  "kozea__weasyprint-2303": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "Kozea/WeasyPrint",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 3}"
+  },
+  "beeware__briefcase-2085": {
+    "exit_status": "Submitted",
+    "patch_chars": 47221,
+    "repo": "beeware/briefcase",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 3}"
+  },
+  "cyclotruc__gitingest-134": {
+    "exit_status": "Submitted",
+    "patch_chars": 552,
+    "repo": "cyclotruc/gitingest",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 1}"
+  },
+  "deepset-ai__haystack-8609": {
+    "exit_status": "Submitted",
+    "patch_chars": 624,
+    "repo": "deepset-ai/haystack",
+    "difficulty": "{'files': 2, 'hunks': 9, 'lines': 50}"
+  },
+  "instructlab__instructlab-2548": {
+    "exit_status": "Submitted",
+    "patch_chars": 1182,
+    "repo": "instructlab/instructlab",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 5}"
+  },
+  "ipython__ipython-14798": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "ipython/ipython",
+    "difficulty": "{'files': 1, 'hunks': 7, 'lines': 28}"
+  },
+  "joke2k__faker-2162": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "joke2k/faker",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 20}"
+  },
+  "keras-team__keras-20443": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "keras-team/keras",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 19}"
+  },
+  "koxudaxi__datamodel-code-generator-2327": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "koxudaxi/datamodel-code-generator",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 3}"
+  },
+  "matplotlib__matplotlib-29258": {
+    "exit_status": "Submitted",
+    "patch_chars": 404,
+    "repo": "matplotlib/matplotlib",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 4}"
+  },
+  "privacyidea__privacyidea-4233": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "privacyidea/privacyidea",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 2}"
+  },
+  "projectmesa__mesa-2523": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "projectmesa/mesa",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 15}"
+  },
+  "pvlib__pvlib-python-2393": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "pvlib/pvlib-python",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 24}"
+  },
+  "pydata__xarray-9760": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "pydata/xarray",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 14}"
+  },
+  "pylint-dev__pylint-10240": {
+    "exit_status": "ContextWindowExceededError",
+    "patch_chars": 0,
+    "repo": "pylint-dev/pylint",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 7}"
+  },
+  "python-babel__babel-1163": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "python-babel/babel",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 8}"
+  },
+  "python-control__python-control-1111": {
+    "exit_status": "LimitsExceeded",
+    "patch_chars": 0,
+    "repo": "python-control/python-control",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 3}"
+  }
+}

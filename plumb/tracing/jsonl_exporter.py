@@ -30,6 +30,7 @@ class JSONLSpanExporter(SpanExporter):
     def __init__(self, path: str | Path) -> None:
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.path.write_text("", encoding="utf-8")  # start fresh per run; re-runs overwrite, never append
 
     def export(self, spans: Sequence[ReadableSpan]) -> SpanExportResult:
         with self.path.open("a", encoding="utf-8") as handle:

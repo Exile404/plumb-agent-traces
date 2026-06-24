@@ -1,4 +1,6 @@
 plumb-venv/
+eval-venv/
+logs/
 vendor/
 __pycache__/
 *.egg-info/
