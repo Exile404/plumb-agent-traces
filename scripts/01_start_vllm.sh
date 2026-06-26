@@ -13,6 +13,12 @@ GPU_UTIL="${PLUMB_GPU_UTIL:-0.85}"
 SERVED_NAME="${PLUMB_SERVED_NAME:-qwen-coder}"
 KV_DTYPE="${PLUMB_KV_DTYPE:-auto}"   # set PLUMB_KV_DTYPE=fp8 to ~halve KV mem and allow PLUMB_MAX_LEN=32768
 
+# Native function-calling for OpenHands (Qwen2.5 = hermes parser). Opt-in: PLUMB_TOOLS=1
+TOOL_FLAGS=()
+if [[ "${PLUMB_TOOLS:-0}" == "1" ]]; then
+  TOOL_FLAGS=(--enable-auto-tool-choice --tool-call-parser hermes)
+fi
+
 # FlashInfer JIT-compiles its sampling kernel at runtime and needs nvcc (full CUDA
 # toolkit), absent here (driver only, no /usr/local/cuda). Native sampler avoids it.
 # Logprobs are unaffected.
@@ -26,4 +32,5 @@ exec vllm serve "${MODEL}" \
   --max-model-len "${MAX_LEN}" \
   --gpu-memory-utilization "${GPU_UTIL}" \
   --kv-cache-dtype "${KV_DTYPE}" \
-  --enable-prefix-caching
+  --enable-prefix-caching \
+  "${TOOL_FLAGS[@]}"

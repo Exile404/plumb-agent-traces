@@ -1,7 +1,19 @@
 plumb-venv/
 eval-venv/
+oh-venv/
 logs/
+data/oh_traces/
 vendor/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+# writeup documents kept local (like SPEC.md): proposal/results tex, pdf, bib, zip
+*.tex
+*.pdf
+*.bib
+*.zip
 __pycache__/
 *.egg-info/
 .pytest_cache/
@@ -13,3 +25,8 @@ data/labels/
 data/models/
 SPEC.md
 data/agent_scratch/
+# mixed-corpus pilot data (generated; regenerate with scripts/17_run_pilot.py)
+data/pilot_traces/
+data/pilot_features/
+data/pilot_tasks/
+data/pilot_runs.json
